@@ -115,13 +115,13 @@ function ColorGradient(colors)
  */
 
 
-function getColorAtPercent = function(percent)
+function getColorAtPercent(gradient, percent)
 {
     percent = Math.floor(percent);
     percent = Math.min(percent, 100);
     percent = Math.max(percent, 1);
 
-    return this._buffer[percent - 1];
+    return gradient._buffer[percent - 1];
 };
 
 /**
@@ -129,9 +129,9 @@ function getColorAtPercent = function(percent)
  * @param {number} percent
  * @return {string}
  */
-function getHexColorAtPercent = function(percent)
+function getHexColorAtPercent(gradient, percent)
 {
-    var color = this.getColorAtPercent(percent);
+    var color = gradient.getColorAtPercent(percent);
 
     return "#" + ("0" + color[0].toString(16)).slice(-2) +
                  ("0" + color[1].toString(16)).slice(-2) +
