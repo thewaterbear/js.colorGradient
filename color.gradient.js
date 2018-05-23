@@ -131,7 +131,7 @@ function getColorAtPercent(gradient, percent)
  */
 function getHexColorAtPercent(gradient, percent)
 {
-    var color = gradient.getColorAtPercent(percent);
+    var color = getColorAtPercent(gradient,percent);
 
     return "#" + ("0" + color[0].toString(16)).slice(-2) +
                  ("0" + color[1].toString(16)).slice(-2) +
