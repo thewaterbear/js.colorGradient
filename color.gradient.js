@@ -105,12 +105,17 @@ function ColorGradient(colors)
     this._calculateBufferSteps();
 }
 
+
+
+
 /**
  * get color at a given percentage as integer rgb array
  * @param {number} percent
  * @return {Array}
  */
-ColorGradient.prototype.getColorAtPercent = function(percent)
+
+
+function getColorAtPercent = function(percent)
 {
     percent = Math.floor(percent);
     percent = Math.min(percent, 100);
@@ -124,7 +129,7 @@ ColorGradient.prototype.getColorAtPercent = function(percent)
  * @param {number} percent
  * @return {string}
  */
-ColorGradient.prototype.getHexColorAtPercent = function(percent)
+function getHexColorAtPercent = function(percent)
 {
     var color = this.getColorAtPercent(percent);
 
@@ -132,3 +137,9 @@ ColorGradient.prototype.getHexColorAtPercent = function(percent)
                  ("0" + color[1].toString(16)).slice(-2) +
                  ("0" + color[2].toString(16)).slice(-2);
 };
+
+
+
+module.exports.ColorGradient = ColorGradient;
+module.exports.getColorAtPercent = getColorAtPercent;
+module.exports.getHexColorAtPercent = getHexColorAtPercent;
