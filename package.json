@@ -1,0 +1,19 @@
+{
+  "name": "jscolorgradient",
+  "version": "1.0.0",
+  "description": "create gradient from color array",
+  "main": "color.gradient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewaterbear/js.colorGradient.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thewaterbear/js.colorGradient/issues"
+  },
+  "homepage": "https://github.com/thewaterbear/js.colorGradient#readme"
+}
